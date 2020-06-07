@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InboxView">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Textvv"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="left"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="Messages"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Textvv"
+        android:scrollbars="vertical"
+        android:choiceMode="multipleChoice"
+        android:id="@+id/recyclerView" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndividualMailView">
+
+    <TextView
+        android:id="@+id/idSenderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:text="Mail By :" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:gravity="right"
+            android:textColor="#E65100"
+            android:layout_marginEnd="10dp"
+            android:text="Date" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            android:textColor="#212121"
+            android:layout_marginBottom="5dp"
+            android:text="Subject :" />
+
+        <TextView
+            android:id="@+id/idSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginBottom="15dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold|italic"
+            android:textColor="#212121"
+            android:text="Context :" />
+
+        <TextView
+            android:id="@+id/idContext"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:maxLines="20"
+            android:textColor="#000"
+            android:layout_marginBottom="15dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#64DD17"
+            android:text="Close" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".AdminInboxArea">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold|italic"
+        android:text="Send Mail" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To :"
+            android:textStyle="bold|italic"/>
+
+        <EditText
+            android:id="@+id/receiverPfNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:text="Subject :" />
+
+        <EditText
+            android:id="@+id/idMailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="Enter the mail Title /  Subject"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:textStyle="bold|italic"
+            android:layout_height="wrap_content"
+            android:text="Context :" />
+
+        <EditText
+            android:id="@+id/idMailBody"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter the  mail context....."
+            android:inputType="textMultiLine"
+            android:maxLines="10" />
+
+        <Button
+            android:id="@+id/btnInboxSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Send" />
+    </LinearLayout>
+</LinearLayout>

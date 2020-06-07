@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ac"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/bordered_rectangle"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/icon_mail_grevience"
+            android:contentDescription="@string/todo" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="3"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:id="@+id/txtTitle"
+        android:textColor="#000"
+        android:text="Sample Subject"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="12sp"
+        android:maxLines="4"
+        android:id="@+id/txtBrief"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="sample context"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+    android:weightSum="2"
+    >
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="1dp"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:id="@+id/unread"
+        android:src="@drawable/single_tick"
+        android:textStyle="bold"
+        android:textColor="#000"
+        tools:ignore="ContentDescription" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="2dp"
+        android:textSize="10sp"
+        android:text="@string/_2020_06_05"
+        android:textStyle="bold|italic"
+        android:id="@+id/dateInbox"
+        android:gravity="center_vertical"
+        android:textColor="#616161"
+        android:layout_marginStart="5dp"
+        tools:ignore="RtlHardcoded,SmallSp" />
+</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
